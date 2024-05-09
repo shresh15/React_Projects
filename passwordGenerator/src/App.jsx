@@ -42,8 +42,8 @@ const copyPasswordtoClipboard =useCallback(() =>{
   },[length, numberAllowed, charAllowed, passwordGenerator])
 
   return (
-    <div className="  flex flex-col justify-between h-screen w-screen " >
-      <h1 className=" content-between text-black-500 text-3xl font-serif font-medium text-center h-12 bg-gradient-to-r from-sky-700 to-indigo-200">
+    <div className=" flex flex-col justify-between h-screen w-screen " >
+      <h1 className=" mt-6 tracking-wide content-between text-white text-5xl font-serif font-medium text-center h-12 ">
         Password Generator
       </h1>
       <div className="  h-full flex items-center space-y-7">
@@ -75,7 +75,7 @@ const copyPasswordtoClipboard =useCallback(() =>{
                 setLength(e.target.value);
               }}
             />
-            <label className="text-lg font-medium">Length:{length}</label>
+            <label className="text-lg text-white font-medium">Length:{length}</label>
           </div>
           <div className="flex place-items-center gap-x-1">
             <input
@@ -86,7 +86,7 @@ const copyPasswordtoClipboard =useCallback(() =>{
                 setNumberAllowed((prev) => !prev);
               }}
             />
-            <label  className="text-lg font-medium" htmlFor="numberInput">Numbers</label>
+            <label  className="text-lg text-white font-medium" htmlFor="numberInput">Numbers</label>
           </div>
 
           <div className="flex place-items-center gap-x-1">
@@ -98,7 +98,7 @@ const copyPasswordtoClipboard =useCallback(() =>{
                 setCharAllowed((prev) => !prev);
               }}
             />
-            <label  className="text-lg font-medium" htmlFor="charInput">Characters</label>
+            <label  className="text-lg text-white font-medium" htmlFor="charInput">Characters</label>
           </div>
         </div>
       
